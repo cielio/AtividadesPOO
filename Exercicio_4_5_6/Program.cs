@@ -18,6 +18,11 @@ namespace Exercicio_4_5_6
             };
             MostrarTodosDalista(listaPessoa);
 
+            var t =listaPessoa.Where(p => p.Idade == 18).Select(p => p.Nome);
+            foreach (var item in t)
+            {
+                System.Console.WriteLine(item);
+            }
             //Exercício 4
             Console.WriteLine("\nExercício 4 - Pessoa Mais velha");
             var pessoaMaisVelha = listaPessoa.OrderBy(pessoa => pessoa.Idade).First();

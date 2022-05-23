@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 using System.Collections.Generic;
 using Exercicio_2.Models;
 
@@ -46,6 +47,9 @@ namespace Exercicio_2
 
             Console.WriteLine("------------------------------------------------------------");
             Console.WriteLine($"O patrimonio da loja: {americanas.Nome} é de R$ {americanas.CalcularPatripomino():F1}");
+
+
+    
         }
 
         private static void ImprimirImpostoLivro(Livro livro)
